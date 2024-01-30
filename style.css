@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* ResetCSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Flexbox */
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    color: #f6f6f6;
+}
+
+.titulo-destaque {
+    color: #22d4fd;
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link {
+    background-color: #22d4fd;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 1. Base - Style comum a todas as paginas
+   2. Layout - Style especifico para cada pagina
+   3. Module - Style de component que pode se repetir em varias paginas
+   4. State - Style que indica a mudança de estado de um componente (botao clicado ou nao, por exemplo)
+   5. Theme */
+
+/* Para nomearmos classes de componentes com o mesmo nome, utilizar .nomeDoCmponente-NomeDaPropriedade
+   
+    -- Box
+    .box {}
+    .box-title {}
+    .box-image {}
+
+    -- Navbar
+    .navbar {}
+    .navbar-title {}
+    .navbar-item {} 
+
+   Assim podemos importar os .css dos componentes sem haver conflito com nomes similares 
+*/
+
+/* No final, uma possivel maneira de nomear classes em css pode ser feita da seguinte forma
+       
+   -- Navbar
+   .navbar {}
+   .navbar__item {}
+   .navbar__item--active {}
+
+*/
